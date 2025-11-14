@@ -25,6 +25,8 @@ IR-Preprocessing-Project/
 ├── outputs.json   # Processed tokens per document (generated after running)
 ├── evaluation.json# Precision/Recall results (generated after running)
 └── README.md      # Project description and usage
+
+
 ▶️ How to Run
 1. Install dependencies
 pip install nltk
@@ -33,6 +35,8 @@ import nltk
 nltk.download("stopwords")
 nltk.download("averaged_perceptron_tagger")
 nltk.download("wordnet")
+
+
 2. Run the script
 python IR.py
 You will be asked:
@@ -50,6 +54,10 @@ Print the resulting tokens
 Compute Precision and Recall for the three default documents that have a Gold Standard defined in the code
 
 Save results to outputs.json and evaluation.json
+
+
+
+
 🔧 Modifying the Gold Standard
 
 Inside IR.py, there is a dictionary similar to:
@@ -63,6 +71,7 @@ If you want to evaluate different texts or change the target tokens:
 Edit these lists according to your new documents
 
 Re-run the script to compute new Precision/Recall values
-👤 Author
 
+
+👤 Author
 Amirreza Khalili - student of Computer Engineering
