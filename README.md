@@ -58,8 +58,22 @@ Save results to outputs.json and evaluation.json
 
 
 
-🔧 Modifying the Gold Standard
+📄 Default Documents Used for Evaluation
 
+The following three documents are the default inputs used in the project for evaluating the preprocessing pipeline and calculating Precision and Recall against the Gold Standard:
+
+Document 1
+Friends, Romans, countrymen, lend me your ears;
+
+Document 2
+John's new U.S.A. laptop is a state-of-the-art device. 
+The price is high, but the quality is amazing!
+
+Document 3
+The authorization for this authorized project is pending. 
+He authorizes the payments regularly.
+
+🔧 Modifying the Gold Standard
 Inside IR.py, there is a dictionary similar to:
 GOLD_STANDARD = {
     "doc1": [...],
